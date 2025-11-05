@@ -19,7 +19,7 @@ function SearchBar({ onSearch }) {
           <img
             src="/logo.png"
             alt="App Logo"
-            width="45"
+            width="70"
             height="45"
             className="me-2 logo-img"
           />
