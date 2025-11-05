@@ -1,9 +1,46 @@
-/*  General Layout */
+/* 🌐 Layout */
 .searchbar-wrapper {
   gap: 10px;
+  flex-wrap: wrap;
 }
 
-/*  Favorites Button Styling */
+/* 🎬 Logo and Title */
+.logo-img {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: rotate(-5deg) scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+.app-title {
+  color: #00e0ff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 10px rgba(0, 224, 255, 0.3);
+}
+
+/* 🔍 Search input styling */
+.form-control {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control:focus {
+  border-color: #00e0ff;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ❤️ Favorites button */
 .fav-btn {
   white-space: nowrap;
   transition: all 0.3s ease;
@@ -11,16 +48,17 @@
 
 .fav-btn:hover {
   background-color: #00c6ff;
-  color: white !important;
   border-color: #00c6ff;
+  color: white !important;
   transform: translateY(-2px);
 }
 
-/*  Responsive Layout */
+/* 📱 Responsive layout */
 @media (max-width: 768px) {
   .searchbar-wrapper {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .search-form {
@@ -29,18 +67,16 @@
   }
 
   .fav-btn {
-    width: 60%;
+    width: 70%;
     text-align: center;
     margin-top: 10px !important;
   }
 
-  .btn-success {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+  .app-title {
+    font-size: 1.3rem;
   }
 }
 
-/*  Extra small screens */
 @media (max-width: 480px) {
   .fav-btn {
     width: 80%;
@@ -48,5 +84,9 @@
 
   .form-control {
     font-size: 0.9rem;
+  }
+
+  .app-title {
+    font-size: 1.1rem;
   }
 }
