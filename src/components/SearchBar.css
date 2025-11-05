@@ -1,0 +1,52 @@
+/*  General Layout */
+.searchbar-wrapper {
+  gap: 10px;
+}
+
+/*  Favorites Button Styling */
+.fav-btn {
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.fav-btn:hover {
+  background-color: #00c6ff;
+  color: white !important;
+  border-color: #00c6ff;
+  transform: translateY(-2px);
+}
+
+/*  Responsive Layout */
+@media (max-width: 768px) {
+  .searchbar-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-form {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .fav-btn {
+    width: 60%;
+    text-align: center;
+    margin-top: 10px !important;
+  }
+
+  .btn-success {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/*  Extra small screens */
+@media (max-width: 480px) {
+  .fav-btn {
+    width: 80%;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+}

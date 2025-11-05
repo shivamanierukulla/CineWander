@@ -1,0 +1,127 @@
+/* 🌌 Background */
+body {
+  background: radial-gradient(circle at top, #1b2735 0%, #090a0f 100%);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* 🎞️ Container and Card Layout */
+.movie-details-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.movie-details-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+  transition: all 0.4s ease;
+}
+
+.movie-details-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.25);
+}
+
+/* 🎬 Poster Styling */
+.movie-poster {
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2);
+  transition: all 0.4s ease;
+}
+
+.movie-poster:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.3);
+}
+
+/* 🏷️ Headings & Text */
+h2.text-warning {
+  color: #ffd369 !important;
+  text-shadow: 0 0 15px rgba(255, 211, 105, 0.5);
+  transition: color 0.3s ease;
+}
+
+h2.text-warning:hover {
+  color: #ffe98a !important;
+}
+
+.text-primary {
+  color: #00bcd4 !important;
+}
+
+.fst-italic.text-primary {
+  color: #80dfff !important;
+}
+
+/* ⭐ Ratings and Badges */
+.badge {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+}
+
+/* 🔘 Buttons */
+.btn {
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 114, 255, 0.3);
+}
+
+.btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* 🌐 Website Link */
+a.text-info {
+  color: #00e0ff !important;
+  transition: all 0.3s ease;
+}
+
+a.text-info:hover {
+  color: #00ffff !important;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .movie-details-card {
+    padding: 20px;
+  }
+
+  .movie-poster {
+    width: 90%;
+  }
+
+  h2.text-warning {
+    font-size: 1.5rem;
+  }
+}
